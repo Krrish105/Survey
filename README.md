@@ -1,6 +1,6 @@
 # Survey
 
-FreeCodeCamp: Responsive Web Design Projects - Build a Tribute Page
+FreeCodeCamp: Responsive Web Design Projects - Build a Survey Form
 
 This is the second of the Responsive Web Design Projects in Free Code Camp and the objective was to build a tribute page that meets Free Code Camp's user stories.
 
