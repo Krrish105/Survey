@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 id="title">CODER</h1>
+    <p id="description"><em>Few personal questions on being a coder.</em></p>
+  </header>
+
+  <!-- Form -->
+  <div class="flex-container">
+    <form id="survey-form">
+
+      <!-- Text Field for Name -->
+      <label for="name" id="name-label" class="in">Name:
+        <input type="text" id="name" placeholder="Enter your Name" class="in" required />
+      </label>
+
+      <!-- Email Field for Email -->
+      <label for="email" id="email-label" class="in">E-mail:
+        <input type="email" id="email" placeholder="Enter your email" class="in" required />
+      </label>
+
+      <!-- Number Field for Age -->
+      <label for="number" id="number-label" class="in">Age:
+        <input type="number" id="number" min="18" max="99" placeholder="Enter your age" class="in"> 
+      </label>
+
+      <!-- Dropdown menu for Current role -->
+      <label for="dropdown" class="in">Which option best describes your current role?
+        <select id="dropdown" name="education" class="in">
+          <option disabled selected value>Select your option</option>
+          <option value="UnderGraduate">UnderGarduate</option>
+          <option value="Graduate">Graduate</option>
+          <option value="Phd">Phd</option>
+          <option value="Homeschool">Homeschool</option>
+        </select>
+      </label>
+
+      <!-- Radio Buttons for a question -->
+      <fieldset form="survey-form">
+        <legend>Have you ever used FreeCodeCamp?</legend>
+        <input type="radio" id="Yess" name="Huh" value="Yes">
+        <label for="Yess">Yes</label>
+
+        <input type="radio" id="Noo" name="Huh" value="No">
+        <label for="Noo">No</label>
+
+        <input type="radio" id="Maybee" name="Huh" value="Maybe">
+        <label for="Maybee">Maybe</label>
+      </fieldset>
+
+      <!-- Checkbox for other resources -->
+      <fieldset form="survey-form">
+        <legend>What are some of the other resources you would recommend?</legend>
+        <input type="checkbox" id="re1" name="re" value="fcc">
+        <label for="re1">Freecodecamp</label><br>
+        <input type="checkbox" id="re2" name="re" value="mit">
+        <label for="re2">MIT OpenCourseWare</label><br>
+        <input type="checkbox" id="re3" name="re" value="Udacity">
+        <label for="re3"> Udacity</label><br>
+        <input type="checkbox" id="re4" name="re" value="Coursera">
+        <label for="re4">Coursera</label><br>
+        <input type="checkbox" id="re5" name="re" value="Codecademy">
+        <label for="re4">Codecademy</label><br>
+      </fieldset>
+
+      <!-- Textarea for additional comments -->
+      <label for="textt" class="in">Any Comments?
+        <textarea id="textt" class="in"></textarea>
+      </label>
+
+      <!-- Button to submit the form -->
+      <button id="submit" class="in">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
